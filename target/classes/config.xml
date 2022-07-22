@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p="http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ https://www.springframework.org/schema/beans/spring-beans.xsd
+ http://www.springframework.org/schema/context
+ http://www.springframework.org/schema/context/spring-context.xsd">
+ 
+ 	<!-- This is first bean (first object of POJO class) -->
+ 	<bean class="com.springcore.springcore.Student" name="student1">
+ 		<property name="studentId" value="1234" />
+
+ 		<property name="studentName" value="Rajat"/>
+ 			
+ 		<property name="studentAddress" value="Ghaziabad"/>
+ 			
+ 	</bean>
+ 	
+ 	<!-- This is second bean (second object of POJO class) -->
+ 	<bean class="com.springcore.springcore.Student" name="student2">
+ 		<property name="studentId" value="0808" />
+
+ 		<property name="studentName" value="Gayatri"/>
+ 			
+ 		<property name="studentAddress" value="Meerut"/>
+ 			
+ 	</bean>
+ 	
+ 	<!-- This is third bean (third object of POJO class) by using p schema-->
+ 	<bean class="com.springcore.springcore.Student" name="student3" p:studentId="5489" p:studentName="Shruti" p:studentAddress="Delhi" />
+ 	
+ </beans>
